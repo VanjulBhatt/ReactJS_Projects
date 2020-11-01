@@ -30,7 +30,7 @@ class App extends Component {
     const textArray = this.state.text.split('');
     charComponentRender = (
       textArray.map((character,index) => {
-      return  <CharComponent letter={character} click={this.deleteCharacterHandler.bind(this,index) }></CharComponent>;
+      return  <CharComponent letter={character} click={this.deleteCharacterHandler.bind(this,index) } keu={index}></CharComponent>;
       })
    );
     return (
